@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../assets/8.png'
-
-import { FaGithub, FaYoutube, FaDribbble, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { Link } from 'react-scroll';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 import {TypeAnimation} from 'react-type-animation'
 
@@ -62,8 +62,14 @@ const Banner = () => {
            whileInView={'show'}
            viewport={{ once: false, amount: 0.7 }}
           className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+            <Link
+              to='contact' 
+              smooth={true}>
               <button className='btn btn-lg'>Entre em contato</button>
-              <a href='https://github.com/luquisinger' className='text-gradient btn-link'>
+              </Link>
+              <a href='https://github.com/luquisinger'
+                target="_blank" rel="noopener noreferrer"
+                className='text-gradient btn-link'>
                 Meu Portfolio
               </a>
           </motion.div>
@@ -73,13 +79,13 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-                <a href='https://www.linkedin.com/in/luquisinger/'>
+                <a href='https://www.linkedin.com/in/luquisinger/' target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href='https://github.com/luquisinger'>
+                <a href='https://github.com/luquisinger' target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </a>
-                <a href='https://www.instagram.com/_luquisingerrr/'>
+                <a href='https://www.instagram.com/_luquisingerrr/' target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
             </motion.div>

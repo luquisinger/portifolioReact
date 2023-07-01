@@ -22,9 +22,7 @@ const services = [
 ];
 
 const Services = () => {
-  const handleMeuPort = () => {
-    window.location.href = 'https://vercel.com/luquisinger';
-  };
+  
   return(
     <section className='section' id='services'>
       <div className='container mx-auto'>
@@ -40,7 +38,11 @@ const Services = () => {
             <h3 className='h3 max-w-[455px] mb-16'>
               Eu sou um desenvolvedor freelancer com 1 ano de experiência.
             </h3>
-            <button onClick={handleMeuPort} className='btn btn-sm'>Veja o meu trabalho</button>
+            <a href="https://docs.google.com/document/d/1cL0iHQp8ozwCt56pd-yuimsrcsKFlUfs/edit" target="_blank" rel="noopener noreferrer">
+            <button  className='btn btn-sm'>
+              Veja o meu curriculum
+            </button>
+            </a>
           </motion.div>
         <motion.div 
         variants={fadeIn('left', 0.5)}
