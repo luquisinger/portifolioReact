@@ -24,7 +24,7 @@ const Work = () => {
             <div>
               <h2 className='h2 leading-tight text-accent'>
                 Meus últimos <br />
-                projetos no vercel
+                projetos
               </h2>
               <p className='max-w-sm mb-16'>stack: React</p>
               <a href="https://vercel.com/luquisinger" target="_blank" rel="noopener noreferrer">
